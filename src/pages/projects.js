@@ -175,21 +175,21 @@ const projects = () => {
           <div className="grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeatureProject
-                title="BankNifty Option Price Predictor"
-                summary="The BankNifty Option Price Predictor project aims to forecast the price of put or call options by leveraging historical data and current market trends. Using a predictive model, it analyzes factors such as yesterday's closing price and today's pre-market opening price of BankNifty to estimate future option prices. This tool assists traders and investors in making informed decisions by providing insights into potential option price movements, thereby optimizing trading strategies and enhancing profitability in derivative markets."
+                title="Option Predictor Pro"
+                summary="The Option Price Predictor Pro forecasts put or call option prices using historical data and market trends. It analyzes factors like yesterday's closing price and today's pre-market opening price to estimate future prices. This tool helps traders make informed decisions and optimize trading strategies in derivative markets"
                 img={optionProject}
-                link="https://github.com/imakshaysoni/Option_Price_Prediction_ML"
-                github="https://github.com/imakshaysoni/"
+                link="https://option-predictor-pro.streamlit.app/"
+                github="https://github.com/imakshaysoni/Option-Predictor-Pro/tree/streamlit-deploy"
                 type="Featured Project"
               />
             </div>
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Naukri Auto Resume Updater"
+                title="Naukri Refresh"
                 img={resume}
-                link="https://github.com/imakshaysoni/NaukriProfileUpdater"
-                github="https://github.com/imakshaysoni"
+                link="https://naukriprofileupdater.streamlit.app/"
+                github="https://github.com/imakshaysoni/NaukriRefresh"
                 type="Project"
               />
             </div>

@@ -188,7 +188,7 @@ const projects = () => {
               <Project
                 title="Naukri Refresh"
                 img={resume}
-                link="https://naukriprofileupdater.streamlit.app/"
+                link="https://naukrirefresh.streamlit.app/"
                 github="https://github.com/imakshaysoni/NaukriRefresh"
                 type="Project"
               />

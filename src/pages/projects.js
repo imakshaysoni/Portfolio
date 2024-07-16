@@ -10,7 +10,6 @@ import optionProject from "../../public/images/projects/BankNiftyOption.jpg";
 import leetcode from "../../public/images/projects/leetcode.jpg";
 import resume from "../../public/images/projects/naukri-resume.jpg";
 import design from "../../public/images/projects/system-design.jpg";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -168,7 +167,7 @@ const projects = () => {
       <main className="w-ful mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination Trumps Knowledge!"
+            text="Where Vision Meets Execution!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 

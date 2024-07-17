@@ -13,8 +13,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Akshay Soni</title>
-        <meta name="Portfolio" content="Akshay Soni Portfolio Website" />
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Welcome to Akshay Soni's portfolio! Explore innovative projects and solutions crafted by a passionate Python Developer and Data Engineer. Let's build the future together." />
+        <meta name="keywords" content="Akshay Soni, portfolio, Python Developer, Software Engineer, software development, web development, innovative projects, technology, programming, coding" />
+        <meta name="author" content="Akshay Soni" />
+        <meta name="robots" content="index, follow" />
+
+        <title>Akshay Soni Portfolio | Home Page </title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-45FLMB18RX"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-45FLMB18RX');`
+        }}>
+</script>
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">

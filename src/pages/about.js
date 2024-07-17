@@ -37,14 +37,23 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Akshay Soni | About Page</title>
-        <meta name="description" content="My Desc" />
+      <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Learn more about Akshay Soni, a versatile Python Developer and Data Engineer with a passion for technology and innovation. Discover my journey, skills, and vision for the future."
+        />
+
+        <meta name="keywords" content="about Akshay Soni, Python Developer, software Engineer, software developer, tech enthusiast, professional journey, skills, expertise, innovation"
+        />
+        <meta name="author" content="Akshay Soni" />
+        <meta name="robots" content="index, follow" />
+        <title>Akshay Soni Portfolio | About Page
+        </title>
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Passion Fules Purpose!"
+            text="Where Creativity Meets Technology!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl
           sm:mb-8 
           "

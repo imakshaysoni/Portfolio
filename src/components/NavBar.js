@@ -3,8 +3,6 @@ import Link from "next/link";
 import Logo from "./Logo";
 import {
   LinkedInIcon,
-  TwitterIcon,
-  LinkArrow,
   GithubIcon,
   SunIcon,
   MoonIcon,
@@ -71,8 +69,8 @@ const NavBar = () => {
       className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 
         lg:px-16 md:px-12 sm:px-8"
     >
-      <button
-        className="flex-col justify-center items-center hidden lg:flex"
+      <div
+        className="hidden lg:flex flex-col items-center justify-between cursor-pointer"
         onClick={handleClick}
       >
         <span
@@ -83,10 +81,24 @@ const NavBar = () => {
         ></span>
         <span
           className={`bg-dark dark:bg-light block trasition-all duration-300 ease-out h-0.5 w-6 rounded-sm translate-y-0.5 
-                    ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"}`}
-        ></span>
-      </button>
-
+                    ${isOpen ? "-rotate-45 -translate-y-1" : ""}`}
+        ></span>{" "}
+        </div>
+        <div className="hidden lg:flex">
+        <button
+          onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+          className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            mode === "dark" ? "bg-light text-dark" : "bg-dark text-light"
+          }`}
+        >
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
+      </div>
+  
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
@@ -164,7 +176,7 @@ const NavBar = () => {
             <motion.a
               href="https://github.com/imakshaysoni"
               target="_blank"
-              className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
+              className="w-6 mx-3 sm:mx-2 bg-light rounded-full dark:bg-dark"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -173,7 +185,7 @@ const NavBar = () => {
             <motion.a
               href="https://www.linkedin.com/in/imakshaysoni/"
               target="_blank"
-              className="w-6 mx-3 sm:mx-1"
+              className="w-6 mx-3 sm:mx-2"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -182,23 +194,12 @@ const NavBar = () => {
             <motion.a
               href="https://leetcode.com/iamakshaysoni"
               target="_blank"
-              className="w-6 ml-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
+              className="w-6 ml-3 sm:mx-2 bg-light rounded-full dark:bg-dark"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
               <LeetCodeIcon />
             </motion.a>
-
-            <button
-              onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
-            >
-              {mode === "dark" ? (
-                <SunIcon className={"fill-dark"} />
-              ) : (
-                <MoonIcon className={"fill-dark"} />
-              )}
-            </button>
           </nav>
         </motion.div>
       ) : null}

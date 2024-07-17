@@ -18,22 +18,20 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>test</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <main
         className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
       >
         <NavBar />
         <AnimatePresence mode="wait">
-        <div class="fixed bottom-2 right-2 p-4 z-50  hidden sm:flex md:flex">
+        <div className="fixed bottom-2 right-2 p-4 z-50  hidden sm:flex md:flex">
             <a href="tel:8871667107">
               <motion.button
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                class="bg-dark dark:bg-light text-white rounded-full w-12 h-12 flex items-center justify-center"
-                onclick="backToTop()"
+                className="bg-dark dark:bg-light text-white rounded-full w-12 h-12 flex items-center justify-center"
               >
                 <CallIcon className={"m-2 fill-white dark:fill-dark"} />
               </motion.button>

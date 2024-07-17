@@ -160,8 +160,18 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Akshay Soni | Project Page</title>
-        <meta name="description" content="My Desc" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Discover the diverse and impactful projects by Akshay Soni, showcasing expertise in Python, Data Engineering, AWS, and more. Explore detailed case studies and success stories."/>
+        <meta name="keywords" content="projects, case studies, Python projects, Data Engineering projects, AWS projects, software development, coding, Akshay Soni, technology solutions"
+        />
+        <meta name="author" content="Akshay Soni" />
+        <meta name="robots" content="index, follow" />
+
+        <title>Akshay Soni Portfolio | Project Page </title>
+
+
+
       </Head>
       <TransitionEffect />
       <main className="w-ful mb-16 flex flex-col items-center justify-center dark:text-light">

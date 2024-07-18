@@ -50,19 +50,19 @@ const Skills = () => {
         <Skill name="EC2" x="-5vw" y="-10vw" />
         <Skill name="Lambda" x="20vw" y="6vw" />
         <Skill name="S3" x="0vw" y="12vw" />
-        <Skill name="StepFunctions" x="-20vw" y="-15vw" />
         <Skill name="CloudWatch" x="15vw" y="-12vw" />
         <Skill name="EventBridge" x="32vw" y="-5vw" />
 
-        <Skill name="FastAPI" x="0vw" y="-22vw" />
+        <Skill name="FastAPI" x="0vw" y="-23vw" />
         <Skill name="Microservices" x="35vw" y="10vw" />
         <Skill name="Django" x="-35vw" y="-5vw" />
 
         <Skill name="System Design" x="25vw" y="-20vw" />
-        <Skill name="Data Structure Algorithms" x="-25vw" y="-20vw" />
+        <Skill name="Data Structure Algorithms" x="-20vw" y="-18vw" />
 
-        <Skill name="SQL" x="-25vw" y="20vw" />
-        <Skill name="NO SQL" x="25vw" y="20vw" />
+        <Skill name="Step Functions" x="-22vw" y="16vw" />
+        <Skill name="NO SQL" x="22vw" y="18vw" />
+        <Skill name="SQL" x="0vw" y="22vw" />
       </div>
     </>
   );

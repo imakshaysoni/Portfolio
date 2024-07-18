@@ -5,7 +5,6 @@ import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
-import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import Typewriter from "@/components/Typewriter";
 
@@ -20,7 +19,7 @@ export default function Home() {
         <meta name="author" content="Akshay Soni" />
         <meta name="robots" content="index, follow" />
 
-        <title>Akshay Soni Portfolio | Home Page </title>
+        <title>Akshay Soni | Senior Software Engineer </title>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-45FLMB18RX"></script>
         <script dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || [];
@@ -35,12 +34,11 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2">
+            <div className="w-1/2 sm:w-full">
               <Image
                 src={profilePic}
                 alt="Akshay"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full
-              "
+                className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="
               max-width: 768px) 100vw,

@@ -132,8 +132,8 @@ const Project = ({ type, title, img, link, github }) => {
           className="hover:underline underline-offset-2 "
         >
           <h2
-            className="my-2 w-full text-left text-3xl font-bold
-        lg:text-2xl  "
+            className="my-2 w-full text-left text-2xl font-bold
+        lg:text-2xl sm:text-sm"
           >
             {title}
           </h2>
@@ -142,7 +142,8 @@ const Project = ({ type, title, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="text-lg font-semibold underline md:text-base"
+            className="rounded-md bg-dark text-light p-2 px-6 text-sm
+        font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-xs"
           >
             Visit
           </Link>
